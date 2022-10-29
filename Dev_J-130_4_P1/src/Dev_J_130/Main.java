@@ -2,12 +2,10 @@
 package Dev_J_130;
 
 public class Main {
-
+    /*Параметрами метода startBusiness(int prov, int cons) является
+      количество поставщиков и потребителей соответственно. */
     public static void main(String[] args) {
         
-        try {new TradeTurnover().startBusiness(3, 3);}                          
-        catch (InterruptedException ex) { }    
+       new Enterprise().startBusiness(10, 10);                          
     } 
 }
-/*Параметрами метода startBusiness(int prod, int cons) является
-  количество поставщиков и потребителей соответственно. */
