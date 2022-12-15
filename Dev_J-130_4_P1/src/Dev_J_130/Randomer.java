@@ -5,16 +5,14 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
 
-public class MyRandom {
+public class Randomer {
     
-    public static int getTimeSleep(){
+    public static int getTimeOut(){
         
         final Random random = new Random();
-        int tm = random.nextInt(10000);
-        if (tm < 100)
-            tm *= 100;
-        else if (tm < 1000)
-            tm *= 10;
+        int tm = random.nextInt(15);
+        if (tm < 5)
+            tm = 5;
         return tm;
     }
     public static int getNumberOfProduct()
@@ -27,6 +25,6 @@ public class MyRandom {
     } 
     public static String timeNow(){
         
-        return "Текущее время операции: " + LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss")) + ". ";
+        return "Операция выполнена в " + LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss "));
     }
 }
